@@ -1,6 +1,5 @@
 import SocialLogin from "./components/SocialLogin";
 import InputField from "./components/InputField";
-import logo from './logo.svg';
 
 function App() {
   return (
