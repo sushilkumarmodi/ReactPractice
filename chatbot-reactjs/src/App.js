@@ -16,7 +16,7 @@ const App = () => {
   const generateBotResponse = async (history) => {
     // Helper function to update chat history
     const updateHistory = (text, isError = false) => {
-      setChatHistory((prev) => [...prev.filter((msg) => msg.text != "Thinking..."), { role: "model", text, isError }]);
+      setChatHistory((prev) => [...prev.filter((msg) => msg.text !== "Thinking..."), { role: "model", text, isError }]);
     };
     // Format chat history for API request
     history = history.map(({ role, text }) => ({ role, parts: [{ text }] }));
